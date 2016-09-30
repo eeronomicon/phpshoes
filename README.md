@@ -10,6 +10,41 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
 
 ## Specifications
 
+* Able to retrieve Store name
+  * Input: database record for Store named "Footsies"
+  * Output: "Footsies"
+
+* Able to retrieve Store ID Number
+  * Input: database record for Store named "Footsies", ID Number of 1
+  * Output: 1
+
+* Can record Store information into database
+  * Input: Store named "Footsies"
+  * Output: create and retrieve "Footsies" from database
+
+* Can replace Store name with new name
+  * Input: new name for "Footsies" - "Footers"
+  * Output: updated name - "Footers"
+
+* Able to retrieve all Stores
+  * Input: database with the Stores "Footsies", "Sole Man", "Boots and Snoots"
+  * Output: retrieved the list "Footsies", "Sole Man", "Boots and Snoots"
+
+* Can remove all Stores from database
+  * Input: database with the Stores "Footsies", "Sole Man", "Boots and Snoots"
+  * Output: retrieved an empty list
+
+* Can find Store based on ID Number
+  * Input: database record for Store named "Footsies", ID Number of 1, finding Store with ID Number of 1
+  * Output: "Footsies"'s database record
+
+* Can update Store record with new name
+  * Input: new name for "Footsies" saved in database - "Footers"
+  * Output: retrieved "Footers" from database
+
+* Can remove Store record from database
+  * Input: remove "Footsies" from database containing "Footsies", "Sole Man", "Boots and Snoots"
+  * Output: only "Sole Man" and "Boots and Snoots" remain in database
 
 
 ## Setup/Installation Requirements
