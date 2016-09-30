@@ -103,8 +103,8 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
   * Output: Querying "Sole Man" returns "Doc Merkins"
 
 * Retrieve a list of Stores NOT associated with a Brand
-* Input: "Sole Man" is associated with "Jhonn Flubog", "Footsies" is not
-* Output: Querying "Jhonn Flubog" returns "Footsies"
+  * Input: "Sole Man" is associated with "Jhonn Flubog", "Footsies" is not
+  * Output: Querying "Jhonn Flubog" returns "Footsies"
 
 ## Setup/Installation Requirements
 
