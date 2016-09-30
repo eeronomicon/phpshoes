@@ -46,6 +46,41 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
   * Input: remove "Footsies" from database containing "Footsies", "Sole Man", "Boots and Snoots"
   * Output: only "Sole Man" and "Boots and Snoots" remain in database
 
+* Able to retrieve Brand name
+  * Input: database record for Brand named "Jhonn Flubog"
+  * Output: "Jhonn Flubog"
+
+* Able to retrieve Brand ID Number
+  * Input: database record for Brand named "Jhonn Flubog", ID Number of 1
+  * Output: 1
+
+* Can record Brand information into database
+  * Input: Brand named "Jhonn Flubog"
+  * Output: create and retrieve "Jhonn Flubog" from database
+
+* Can replace Brand name with new name
+  * Input: new name for "Jhonn Flubog" - "Jhonn B Flubog"
+  * Output: updated name - "Jhonn B Flubog"
+
+* Able to retrieve all Brands
+  * Input: database with the Brands "Jhonn Flubog", "Doc Merkins", "Fried Boots"
+  * Output: retrieved the list "Jhonn Flubog", "Doc Merkins", "Fried Boots"
+
+* Can remove all Brands from database
+  * Input: database with the Brands "Jhonn Flubog", "Doc Merkins", "Fried Boots"
+  * Output: retrieved an empty list
+
+* Can find Brand based on ID Number
+  * Input: database record for Brand named "Jhonn Flubog", ID Number of 1, finding Brand with ID Number of 1
+  * Output: "Jhonn Flubog"'s database record
+
+* Can update Brand record with new name
+  * Input: new name for "Jhonn Flubog" saved in database - "Jhonn B Flubog"
+  * Output: retrieved "Jhonn B Flubog" from database
+
+* Can remove Brand record from database
+  * Input: remove "Jhonn Flubog" from database containing "Jhonn Flubog", "Doc Merkins", "Fried Boots"
+  * Output: only "Doc Merkins" and "Fried Boots" remain in database
 
 ## Setup/Installation Requirements
 
@@ -75,7 +110,7 @@ Contact me via GitHub!
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+This app uses the following bits of Human ingenuity: HTML5, JavaScript, PHP, mySQL, jQuery, and Bootstrap.
 
 ### License
 
