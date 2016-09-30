@@ -19,7 +19,7 @@
                 <li class="list-group-item active"><h4>Stores (Or Should They Be Boot-iques?)</h4></li>
                 {% if stores is not empty %}
                     {% for store in stores %}
-                        <li class="list-group-item"><a href="/stores/{{ store.getId }}"><h4>{{ store.name }} (Carries {{ store.getBrands|length }} Brands)</h4></a></li>
+                        <li class="list-group-item"><a href="/stores/{{ store.getId }}"><h4>{{ store.name }} (Brands Carried: {{ store.getBrands|length }})</h4></a></li>
                     {% endfor %}
                 {% else %}
                     <li class="list-group-item"><h4>No stores found! Wanna add one?</h4></li>
