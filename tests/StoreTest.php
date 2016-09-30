@@ -200,5 +200,29 @@
             $this->assertEquals([$test_brand1], $result);
         }
 
+        function test_getNonBrands()
+        {
+            // Arrange
+            $name = "Jhonn Flubog";
+            $id = null;
+            $test_brand1 = new Brand($name, $id);
+            $test_brand1->save();
+
+            $name2 = "Doc Merkins";
+            $test_brand2 = new Brand($name2, $id);
+            $test_brand2->save();
+
+            $name = "Sole Man";
+            $test_store1 = new Store($name, $id);
+            $test_store1->save();
+
+            // Act
+            $test_store1->addBrand($test_brand1->getId());
+            $result = $test_store1->getNonBrands();
+
+            // Assert
+            $this->assertEquals([$test_brand2], $result);
+        }
+
     }
 ?>

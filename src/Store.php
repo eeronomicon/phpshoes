@@ -99,5 +99,22 @@
             $GLOBALS['DB']->exec("INSERT INTO brands_stores (brand_id, store_id) VALUES ({$brand_id}, {$store_id});");
         }
 
+        function getNonBrands()
+        {
+            $allBrands = Brand::getAll();
+            $storeBrands = $this->getBrands();
+            $nonBrands = array();
+            foreach($allBrands as $brand) {
+                if(!in_array($brand, $storeBrands))
+                {
+                    $name = $brand->getName();
+                    $id = $brand->getId();
+                    $new_brand = new Brand($name, $id);
+                    array_push($nonBrands, $new_brand);
+                }
+            }
+            return $nonBrands;
+        }
+
     }
 ?>
