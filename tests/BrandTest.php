@@ -189,7 +189,6 @@
             $test_brand1->save();
 
             $name = "Footsies";
-            $id = null;
             $test_store1 = new Store($name, $id);
             $test_store1->save();
 
@@ -214,7 +213,6 @@
             $test_brand2->save();
 
             $name = "Footsies";
-            $id = null;
             $test_store1 = new Store($name, $id);
             $test_store1->save();
 
@@ -236,7 +234,6 @@
             $test_brand1->save();
 
             $name = "Footsies";
-            $id = null;
             $test_store1 = new Store($name, $id);
             $test_store1->save();
 

@@ -94,6 +94,9 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
   * Input: associate "Doc Merkins" with "Footsies" and "Sole Man"
   * Output: a query of "Doc Merkins" shows "Footsies" and "Sole Man" as Stores
 
+* Can add a Store to a Brand
+  * Input: associate "Sole Man" Store with "Jhonn Flubog" Brand
+  * Output: a query of all Stores associated with "Jhonn Flubog" returns "Sole Man"
 
 ## Setup/Installation Requirements
 

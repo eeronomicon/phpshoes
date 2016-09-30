@@ -180,5 +180,25 @@
             $this->assertEquals([$test_store2, $test_store3], $result);
         }
 
+        function test_addBrand()
+        {
+            // Arrange
+            $name = "Jhonn Flubog";
+            $id = null;
+            $test_brand1 = new Brand($name, $id);
+            $test_brand1->save();
+
+            $name = "Footsies";
+            $test_store1 = new Store($name, $id);
+            $test_store1->save();
+
+            // Act
+            $test_store1->addBrand($test_brand1->getId());
+            $result = $test_store1->getBrands();
+
+            // Assert
+            $this->assertEquals([$test_brand1], $result);
+        }
+
     }
 ?>
