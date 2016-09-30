@@ -1,6 +1,6 @@
 # _Sole Survivor_
 
-#### _PHP/mySQL Project Demonstrating Many-to-Many Relationships, 30 September 2016_
+#### _PHP/mySQL Exercise Demonstrating Many-to-Many Relationships, 30 September 2016_
 
 #### By _**HK Kahng**_
 
@@ -101,6 +101,10 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
 * Retrieve a list of Brands NOT associated with a Store
   * Input: "Jhonn Flubog" is associated with "Sole Man", "Doc Merkins" is not
   * Output: Querying "Sole Man" returns "Doc Merkins"
+
+* Retrieve a list of Stores NOT associated with a Brand
+* Input: "Sole Man" is associated with "Jhonn Flubog", "Footsies" is not
+* Output: Querying "Jhonn Flubog" returns "Footsies"
 
 ## Setup/Installation Requirements
 

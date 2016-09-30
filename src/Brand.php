@@ -38,7 +38,7 @@
 
         static function getAll()
         {
-            $returned_brand = $GLOBALS['DB']->query("SELECT * FROM brands;");
+            $returned_brand = $GLOBALS['DB']->query("SELECT * FROM brands ORDER BY name;");
             $brands = array();
             foreach($returned_brand as $brand) {
                 $name = $brand['name'];
@@ -97,6 +97,23 @@
         {
             $brand_id = $this->getid();
             $GLOBALS['DB']->exec("INSERT INTO brands_stores (brand_id, store_id) VALUES ({$brand_id}, {$store_id});");
+        }
+
+        function getNonStores()
+        {
+            $allStores = Store::getAll();
+            $thisStores = $this->getStores();
+            $nonStores = array();
+            foreach($allStores as $brand) {
+                if(!in_array($brand, $thisStores))
+                {
+                    $name = $brand->getName();
+                    $id = $brand->getId();
+                    $new_brand = new Store($name, $id);
+                    array_push($nonStores, $new_brand);
+                }
+            }
+            return $nonStores;
         }
 
     }

@@ -81,7 +81,7 @@
             $result = Brand::getAll();
 
             // Assert
-            $this->assertEquals([$test_brand1, $test_brand2], $result);
+            $this->assertEquals([$test_brand2, $test_brand1], $result);
 
         }
 
@@ -248,6 +248,30 @@
 
             // Assert
             $this->assertEquals([$test_store1, $test_store2], $result);
+        }
+
+        function test_getNonStores()
+        {
+            // Arrange
+            $name = "Doc Merkins";
+            $id = null;
+            $test_brand1 = new Brand($name, $id);
+            $test_brand1->save();
+
+            $name = "Footsies";
+            $test_store1 = new Store($name, $id);
+            $test_store1->save();
+
+            $name2 = "Sole Man";
+            $test_store2 = new Store($name2, $id);
+            $test_store2->save();
+
+            // Act
+            $test_brand1->addStore($test_store1->getId());
+            $result = $test_brand1->getNonStores();
+
+            // Assert
+            $this->assertEquals([$test_store2], $result);
         }
     }
 ?>
