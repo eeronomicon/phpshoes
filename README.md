@@ -59,8 +59,8 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
   * Output: create and retrieve "Jhonn Flubog" from database
 
 * Can replace Brand name with new name
-  * Input: new name for "Jhonn Flubog" - "Jhonn B Flubog"
-  * Output: updated name - "Jhonn B Flubog"
+  * Input: new name for "Jhonn Flubog" - "Jhonny B Flubog"
+  * Output: updated name - "Jhonny B Flubog"
 
 * Able to retrieve all Brands
   * Input: database with the Brands "Jhonn Flubog", "Doc Merkins", "Fried Boots"
@@ -75,8 +75,8 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
   * Output: "Jhonn Flubog"'s database record
 
 * Can update Brand record with new name
-  * Input: new name for "Jhonn Flubog" saved in database - "Jhonn B Flubog"
-  * Output: retrieved "Jhonn B Flubog" from database
+  * Input: new name for "Jhonn Flubog" saved in database - "Jhonny B Flubog"
+  * Output: retrieved "Jhonny B Flubog" from database
 
 * Can remove Brand record from database
   * Input: remove "Jhonn Flubog" from database containing "Jhonn Flubog", "Doc Merkins", "Fried Boots"
