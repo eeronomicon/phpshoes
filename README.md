@@ -82,6 +82,15 @@ Exercise objectives: Write a program to list out local shoe stores and the brand
   * Input: remove "Jhonn Flubog" from database containing "Jhonn Flubog", "Doc Merkins", "Fried Boots"
   * Output: only "Doc Merkins" and "Fried Boots" remain in database
 
+* Can add a Brand to a Store
+  * Input: associate "Jhonn Flubog" Brand with "Sole Man" Store
+  * Output: a query of all Brands associated with "Sole Man" returns "Jhonn Flubog"
+
+* Can add multiple Brands to a Store
+  * Input: associate "Jhonn Flubog" and "Doc Merkins" Brand with "Sole Man" Store
+  * Output: a query of all Brands associated with "Sole Man" returns "Jhonn Flubog" and "Doc Merkins"
+
+
 ## Setup/Installation Requirements
 
 ### Database Setup
