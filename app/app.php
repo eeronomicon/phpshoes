@@ -18,7 +18,7 @@
     Request::enableHttpMethodParameterOverride();
 
     $app->get('/', function() use ($app) {
-        return $app['twig']->render('index.html.twig');
+        return $app['twig']->render('index.html.twig', array('stores' => Store::getAll(), 'brands' => Brand::getAll()));
     });
 
     $app->get('/stores', function() use ($app) {
@@ -112,7 +112,6 @@
         $non_stores = $brand->getNonStores();
         return $app['twig']->render('brand.html.twig', array('brand' => $brand, 'stores' => $stores, 'nonstores' => $non_stores));
     });
-
 
     return $app;
 ?>
