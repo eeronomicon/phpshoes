@@ -59,6 +59,14 @@
         return $app['twig']->render('store.html.twig', array('store' => $store, 'brands' => $brands, 'nonbrands' => $non_brands));
     });
 
+    $app->post('/stores/{id}/add_brand', function($id) use ($app) {
+        $store = Store::find($id);
+        $store->addBrand($_POST['brand_id']);
+        $brands = $store->getBrands();
+        $non_brands = $store->getNonBrands();
+        return $app['twig']->render('store.html.twig', array('store' => $store, 'brands' => $brands, 'nonbrands' => $non_brands));
+    });
+
     $app->get('/brands', function() use ($app) {
         return $app['twig']->render('brands.html.twig', array('brands' => Brand::getAll()));
     });

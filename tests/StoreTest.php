@@ -177,7 +177,7 @@
             $result = Store::getAll();
 
             // Assert
-            $this->assertEquals([$test_store2, $test_store3], $result);
+            $this->assertEquals([$test_store3, $test_store2], $result);
         }
 
         function test_addBrand()
