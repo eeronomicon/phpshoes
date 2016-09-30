@@ -38,15 +38,14 @@
         {
             // Arrange
             $name = "Jhonn Flubog";
-            $id = null;
+            $id = 20;
             $test_brand = new Brand($name, $id);
-            $test_brand->save();
 
             // Act
             $result = $test_brand->getId();
 
             // Assert
-            $this->assertEquals($test_brand->getId(), $result);
+            $this->assertEquals($id, $result);
         }
 
         function test_setName()

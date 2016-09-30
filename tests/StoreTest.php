@@ -38,15 +38,14 @@
         {
             // Arrange
             $name = "Footsies";
-            $id = null;
+            $id = 10;
             $test_store = new Store($name, $id);
-            $test_store->save();
 
             // Act
             $result = $test_store->getId();
 
             // Assert
-            $this->assertEquals($test_store->getId(), $result);
+            $this->assertEquals($id, $result);
         }
 
         function test_setName()
