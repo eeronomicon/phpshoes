@@ -227,5 +227,30 @@
             $this->assertEquals([$test_brand1, $test_brand2], $result);
         }
 
+        function test_getStores()
+        {
+            // Arrange
+            $name = "Doc Merkins";
+            $id = null;
+            $test_brand1 = new Brand($name, $id);
+            $test_brand1->save();
+
+            $name = "Footsies";
+            $id = null;
+            $test_store1 = new Store($name, $id);
+            $test_store1->save();
+
+            $name2 = "Sole Man";
+            $test_store2 = new Store($name2, $id);
+            $test_store2->save();
+
+            // Act
+            $test_brand1->addStore($test_store1->getId());
+            $test_brand1->addStore($test_store2->getId());
+            $result = $test_brand1->getStores();
+
+            // Assert
+            $this->assertEquals([$test_store1, $test_store2], $result);
+        }
     }
 ?>
